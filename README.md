@@ -2,7 +2,7 @@
 
 ## How to Install
 
-- First, Make sure you Download the **Latest release** of this application through the following link **[KatyPESA releases](https://github.com/mdausoft/katyPESA)**
+- First, Make sure you Download the **Latest release** of this application through the following link **[KatyPESA releases](https://github.com/mdausoft/katyPESA/releases)**
 - Then, After you have downloaded _Unzip_ and place the application folder wherever you wish.
 
 ## How to Use
