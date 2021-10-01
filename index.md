@@ -1,37 +1,58 @@
-## Welcome to katyPESA
+# Welcome to katyPESA
 
-You can use the [editor on GitHub](https://github.com/mdausoft/katyPESA/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## How to Install
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+- First, Make sure you Download the **Latest release** of this application through the following link **[KatyPESA releases](https://github.com/mdausoft/katyPESA/releases)**
+- Then, After you have downloaded _Unzip_ and place the application folder wherever you wish.
 
-### Markdown
+## How to Use
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- For registering the transaction
 
-```markdown
-Syntax highlighted code block
+  ```PHP
+  <?php
+  include "/path/to/katyPESA_class";
 
-# Header 1
-## Header 2
-### Header 3
+  $payload = array(
+    "service" => "ADD",
+    "corporate_id" => "XXXXXXX",
+    "corporate_id2" => "XXX",
+    "corporate_name" => "XXXXX XXXXX XXX",
+    "customer_name" => "XXXX XXXX",
+    "paymentReference" => "XXXXXXXXXXX",
+    "branch_name" => "XXXX",
+    "paymentType" => "1",
+    "mobile_number" => "255XXXXXXXXX",
+    "token_id" => "XXXXXXXXXXXXXXX",
+    "currency" => "TZS",
+    "amount" => "XXXX",
+    "expired" => "0",
+    "expire_Date" => "",
+    "amountType" => "FIXED"
+  );
 
-- Bulleted
-- List
+  try {
+        $katypesa = new katyPESA(
+        "your_encryption_key",
+        "your_access_token",
+        "private_key_password",
+        "public_key_password",
+        "path/to/private_certificate",
+        "path/to/public_certificate");
 
-1. Numbered
-2. List
+    $katypesa->setEndPoint("URL", $payload);
+    $katypesa->sendAPI();
+  } catch (Error $e) {
+    echo $e->getMessage();
+  }
+  ?>
+  ```
 
-**Bold** and _Italic_ and `Code` text
+> For more information please check ./examples folder
+> And Make sure you have the Certificates
 
-[Link](url) and ![Image](src)
-```
+Please don't hesitate to contact us directly via:
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Email us <info@katysoft.co.tz>
 
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/mdausoft/katyPESA/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+### Happy Coding 😋
