@@ -53,6 +53,7 @@
 
 Please don't hesitate to contact us directly via:
 
-Email us <info@katysoft.co.tz>
+Email us - <info@katysoft.co.tz>
+Phone # - +255 782 030 845
 
 ### Happy Coding 😋
