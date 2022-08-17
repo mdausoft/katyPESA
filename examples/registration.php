@@ -1,14 +1,14 @@
 <?php
-include 'katyPESA.php';
+include '../katyPESA.php';
 
 $API_registration_url = "http://45.79.91.57/katypesa/api/registration";
 $encyption_key = "sda54sekjeuwehrgsjkdrt3yu";
 $ACCESS_TOKEN = "sda54sekjeuwehrgsjkdrt3yu";
 $keyPass = "passpass";
-$keyPath = "crdbprivate.pfx";
+$keyPath = "/path/to_private_certificate";
 
 $pub_keyPass = "passpass";
-$public_cert_location = "crdbpublic.pfx";
+$public_cert_location = "path/to_public_certificate";
 
 $payload2 = array(
     "service" => "ADD",
