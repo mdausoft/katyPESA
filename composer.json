@@ -1,0 +1,16 @@
+{
+    "name": "katysoft/katypesa",
+    "description": "CRDB API gateway for payment",
+    "autoload": {
+        "psr-4": {
+            "Katysoft\\Katypesa\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Noel Kapungu",
+            "email": "noelikapungu3@gmail.com"
+        }
+    ],
+    "require": {}
+}
