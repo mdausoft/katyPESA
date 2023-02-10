@@ -28,7 +28,9 @@
     "amount" => "XXXX",
     "expired" => "0",
     "expire_Date" => "",
-    "amountType" => "FIXED"
+    "amountType" => "FIXED | FLEXIBLE",
+    "notification_url" => "",
+    "notify_method" => "", // XML | JSON
   );
 
   try {

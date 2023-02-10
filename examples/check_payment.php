@@ -1,18 +1,17 @@
 <?php
 include 'katyPESA.php';
 
-$API_checkPayment_url = "http://45.79.91.57/katypesa/api/check_payment";
-$encyption_key = "sda54sekjeuwehrgsjkdrt3yu";
-$ACCESS_TOKEN = "sda54sekjeuwehrgsjkdrt3yu";
+$API_checkPayment_url = "http://katypesa_test.katysoft.tech/api/check_payment";
+$encyption_key = "jkgdkjsdgsjjsagk67";
+$ACCESS_TOKEN = "gjkasdgkjsadbnvcxcxz";
 $keyPass = "passpass";
-$keyPath = "crdbprivate.pfx";
-
+$keyPath = "/path/to/private_certificate";
 $pub_keyPass = "passpass";
-$public_cert_location = "crdbpublic.pfx";
+$public_cert_location = "path/to/public_certificate";
 
 $payload2 = array(
     "paymentReference" => ["HP123455", "HP1234534"],
-    "corporate_id" => "78451610527793"
+    "corporate_id" => "" // Corporate ID is Mandatory
 );
 
 try {
